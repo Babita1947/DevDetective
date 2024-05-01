@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevDetective</title>
+
+    <!-- Google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <!-- header part -->
+        <header class="heading-part">
+            <h1 class="title">DevDetective</h1>
+            <div id="btn-mode">
+                <p class="mode-text">DARK</p>
+                <div class="icon-container">
+                    <img id="mode-icon" src="./assets/moon-icon.svg" alt="DevDetective">
+                </div>
+            </div>
+        </header>
+
+        <!-- input Field -->
+        <div class="search-data active">
+            <!-- <img src="./assets/search-icon.svg" alt="DevDetective" id="search-icon"> -->
+            <input type="text" id="input-field" placeholder="Enter a GitHub Username..." required>
+            <!-- <img src="" alt="DevDetective" id="cross-icon"> -->
+            <div class="error">
+                <p id="no-results">no search results</p>
+            </div>
+            <button id="search-btn" class="submit">Search</button>
+        </div>
+
+        <!-- UI detail -->
+        <div class="info-container">
+            <img src="" alt="DevDetective" id="avatar">
+            <div class="user-data">
+                <h2 id="name"></h2>
+                <p id="join-date"></p>
+            </div>
+            <a id="git-id" href="#" target="_blank" rel="noopener noreferrer"></a>
+            <p id="bio"></p>
+
+            <!-- Repos Followers Following -->
+            <div class="git-data">
+                <div class="profile-stat">
+                    <p class="stat-title">Repos</p>
+                    <p id="repos" class="stat-value"></p>
+                </div>
+                <div class="profile-stat">
+                    <p class="stat-title">Followers</p>
+                    <p id="followers" class="stat-value"></p>
+                </div>
+                <div class="profile-stat">
+                    <p class="stat-title">Following</p>
+                    <p id="following" class="stat-value"></p>
+                </div>
+            </div>
+
+            <div class="other-data">
+                <!-- for location -->
+                <div class="profile-info">
+                    <div class="bottom-icons">
+                        <img src="./assets/location-icon.svg" alt="DevDetective">
+                    </div>
+                    <p id="location"></p>
+                </div>
+
+                <!-- for link -->
+                <div class="profile-info">
+                    <div class="bottom-icons">
+                        <img src="./assets/website-icon.svg" alt="DevDetective">
+                    </div>
+                    <a href="#" id="webpage"></a>
+                </div>
+
+                <!-- for twitter link -->
+                <div class="profile-info">
+                    <div class="bottom-icons">
+                        <img src="./assets/twitter-icon.svg" alt="DevDetective">
+                    </div>
+                    <a href="#" id="twitter"></a>
+                </div>
+
+                <!-- for company -->
+                <div class="profile-info">
+                    <div class="bottom-icons">
+                        <img src="./assets/company-icon.svg" alt="DevDetective">
+                    </div>
+                    <a href="#" id="company"></a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
