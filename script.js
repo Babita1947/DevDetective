@@ -140,5 +140,5 @@ searchBtn.addEventListener("click",()=>{
 
 function initial(){
     console.log("Username");
-    getAPIData(url+"thepranaygupta");
+    getAPIData(url+"hiteshchoudhary");
 }
